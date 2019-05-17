@@ -1,17 +1,31 @@
-input {
-    padding: 5px;
-    margin-bottom: 20px;
-  }
-  
-  .button {
-    background-color: rgb(0, 172, 0);
-    color: white;
-    padding: 5px 20px;
-    border: none;
-    display: block;
-    margin: 0 auto;
-  }
-  
-  .button:hover {
-    background-color: rgb(0, 148, 0);
-  }
+/*Colors:
+#104F55
+#32746D
+#9EC5AB
+#01200F
+#011502
+*/
+
+html{
+	background-color:#32746D;
+	color:#011502;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+	font-size:36px;
+	font-weight:bold;
+}
+
+.content{
+	background-color:#9EC5AB;
+	width:70%;
+	padding:20px;
+	margin:20px auto;
+}
+
+#cartoons{
+  display: block;
+    float: left;
+    margin: 20px;
+}
