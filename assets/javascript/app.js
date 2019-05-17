@@ -1,4 +1,4 @@
-var cartoonsArray = ["Snorks", "Rainbow Brite", "He-Man", "Thundercats", "Care Bears"];
+var cartoonsArray = ["Snorks", "Rainbow Brite", "He-Man", "Thundercats", "Care Bears", "Duck Tales", "Inspector Gadget", "My Little Pony", "Muppet Babies", "Popeye"];
 
 $(document).ready(function() {
     for (var i = 0; i < cartoonsArray.length; i++) {
@@ -6,7 +6,7 @@ $(document).ready(function() {
     }
 });
 
-function athleteButtonClicked() {
+function cartoonButtonClicked() {
     var userInput = $('#cartoon-input').val();
     searchGif(userInput);
 }
@@ -21,11 +21,12 @@ function submitButtonClicked() {
 
 function searchGif(gifName) {
     $.ajax({
-            url: 'https://api.giphy.com/v1/gifs/search?q= ' + gifName + ' &api_key=f7i61w2ucjVcCsVxh1ZOnvYHu9gWBBl0',
+            url: 'https://api.giphy.com/v1/gifs/search?q= ' + gifName + ' &api_key=f7i61w2ucjVcCsVxh1ZOnvYHu9gWBBl0&limit=10',
             type: 'GET',
         })
         .done(function(response) {
             displayGif(response);
+            console.log(response)
         })
 }
 
