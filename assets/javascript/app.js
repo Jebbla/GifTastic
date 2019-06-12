@@ -6,7 +6,7 @@ $(document).ready(function() {
     }
 });
 
-function cartoonButtonClicked() {
+function cartoonButtonClicked() 
     var userInput = $('#cartoon-input').val();
     searchGif(userInput);
 }
@@ -18,6 +18,7 @@ function submitButtonClicked() {
         $('#cartoon-buttons').append("<button type='button' onclick='searchGif(\"" + userInput + "\")' class='btn btn-primary' value=' " + userInput + "'> " + userInput + " </button>");
     }
 }
+
 
 function searchGif(gifName) {
     $.ajax({
